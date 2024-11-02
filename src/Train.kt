@@ -13,7 +13,7 @@ internal class Train(private val destination: Destination, passengerCount: Int) 
     }
 
     fun depart() {
-        println("Поезд ${destination.from} - ${destination.to}, состоящий из ${wagons.size} вагонов отправлен")
+        println("Поезд $destination, состоящий из ${wagons.size} вагонов отправлен")
         wagons.forEachIndexed { i, wagon ->
             println("Вагон ${i + 1} - мест ${wagon.size}, пассажиров ${wagon.occupied}")
         }
