@@ -31,7 +31,7 @@ fun main() {
             println("Создано направление $destination")
 
             salesman.sellTickets()
-            val ticketCount = salesman.lastSale
+            val ticketCount = salesman.ticketsSold
             println("Продано $ticketCount билета(ов)")
 
             val train = Train(destination, ticketCount)

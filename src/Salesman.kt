@@ -4,10 +4,8 @@ internal class Salesman {
     }
 
     private var _ticketsSold = 0
-    val lastSale: Int
+    val ticketsSold: Int
         get() {
-            val temp = _ticketsSold
-            _ticketsSold = 0
-            return temp
+            return _ticketsSold
         }
 }
