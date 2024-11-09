@@ -27,7 +27,7 @@ fun main() {
         if (input == "exit") break
 
         if (input == "create") {
-            val destination = Train.Destination(worldMap.findCities(2))
+            val destination = Destination(worldMap.findCities(2))
             println("Создано направление $destination")
 
             salesman.sellTickets()

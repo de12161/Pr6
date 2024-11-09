@@ -1,12 +1,4 @@
 internal class Train(private val destination: Destination, passengerCount: Int) {
-    class Destination(val from: String, val to: String) {
-        constructor(cities: List<String>): this(cities[0], cities[1])
-
-        override fun toString(): String {
-            return "$from - $to"
-        }
-    }
-
     private class Wagon(size: Int, occupied: Int) {
         val size: Int = size.coerceAtLeast(0)
         val occupied: Int = occupied.coerceIn(0, this.size)
